@@ -36,13 +36,13 @@
         $email = $_POST['email'];
         $mobile = $_POST['mobile'];
         
-        // include database connection file
+        //memasukan file koneksi data
         include_once("config.php");
                 
-        // Insert user data into table
+        // Masukkan data pengguna ke dalam tabel
         $result = mysqli_query($mysqli, "INSERT INTO users(name,email,mobile) VALUES('$name','$email','$mobile')");
         
-        // Show message when user added
+        // Memunculkan Pesan Berhasil ditambahkan
         echo "User added successfully. <a href='index.php'>View Users</a>";
     }
     ?>
