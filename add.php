@@ -30,7 +30,7 @@
     
     <?php
  
-    // Check If form submitted, insert form data into users table.
+   //Untuk memasukan data ke dalam tabel
     if(isset($_POST['Submit'])) {
         $name = $_POST['name'];
         $email = $_POST['email'];
